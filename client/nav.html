@@ -1,0 +1,18 @@
+<template name="nav">
+    <div class="row">
+        <div class="col s12">
+            <div class="arcmenu" style="angleStart: 100;display: inline-block; width: 55px; height: 55px; angleInterval: 500;">
+                <a id="menu-button" href="#" class="btn-floating btn-large waves-effect waves-light arcmenu-display" style="position: absolute; display: block; width: 55px; height: 55px;">+</a>
+                <ul class="arcmenu-menu" style="position: relative; display: none; margin: 0px; width: 55px; height: 55px;">
+                    <li style="position: absolute; top: 0px; left: 0px; opacity: 0;"><a href="{{pathFor 'home'}}" class="btn-floating btn-large waves-effect waves-light red">Home</a></li>
+                    <li style="position: absolute; top: 0px; left: 0px; opacity: 0;"><a href="{{pathFor 'private'}}" class="btn-floating btn-large waves-effect waves-light green">private</a></li>
+                    {{#if currentUser}}
+                        <li id="logout" style="position: absolute; top: 0px; left: 0px; opacity: 0;"><a id="logout" href="{{pathFor 'home'}}" class="btn-floating btn-large waves-effect waves-light teal">out</a></li>
+                    {{else}}
+                        <li style="position: absolute; top: 0px; left: 0px; opacity: 0;"><a href="{{pathFor 'sign-in'}}" class="btn-floating btn-large waves-effect waves-light blue">in</a></li>
+                    {{/if}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</template>
