@@ -5,7 +5,6 @@ html {
 
 body {
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif /*rtl:prepend:"Droid Arabic Kufi","Droid Sans", */;
-    background: #fcfcfc url(/imgs/bg.jpg) repeat;
     margin: 0px;
     /* Margin bottom by footer height */
     margin-bottom: 70px;
@@ -65,9 +64,37 @@ footer {
     }
 }
 .arcmenu{
-    margin-top:10px;
-    position:static;
+    margin-top:6px;
+    position:absolute;
 }
-#menu-button{
-    background-image: url("https://www.facebook.com/photo.php?fbid=10152601299567946&set=a.437388282945.210581.534107945&type=3&theater");
+#menu-button img{
+
+    max-width: 54px;
+    max-height: 54px;
+}
+.collapsible-body {
+    padding:10px;
+}
+#preloader{
+    position: absolute;
+    float: left;
+    top: 1.5px;
+    left: 6.2px;
+}
+nav {
+    height: 35px;
+    line-height: 34px;
+}
+.arcmenu-menu li {
+    z-index: 100000000;
+}
+#nav2{
+    background-color:#dd2c00 !important;
+}
+#userinfo {
+    float:right;
+    padding-right: 20px;
+}
+nav ul li {
+    padding-right: 20px;
 }

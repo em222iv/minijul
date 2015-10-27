@@ -10,6 +10,7 @@ service-configuration
 
 useraccounts:materialize
 accounts-github
+accounts-facebook
 fortawesome:fontawesome
 zimme:active-route
 standard-minifiers
@@ -26,7 +27,9 @@ random
 ejson
 spacebars
 check
-materialize:materialize@0.97.0
 useraccounts:flow-routing
 arillo:flow-router-helpers
 pistou:arcmenu
+materialize:materialize
+aldeed:collection2
+rubaxa:sortable
